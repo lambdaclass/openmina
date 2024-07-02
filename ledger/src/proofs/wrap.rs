@@ -459,7 +459,7 @@ fn pad_messages_for_next_wrap_proof(
     msgs
 }
 
-fn make_public_input(
+pub fn make_public_input(
     step_statement: &StepStatement,
     messages_for_next_step_proof_hash: [u64; 4],
     messages_for_next_wrap_proof_hash: &[[u64; 4]],
