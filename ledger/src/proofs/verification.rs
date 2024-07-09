@@ -13,7 +13,6 @@ use crate::{
         BACKEND_TICK_ROUNDS_N,
     },
     scan_state::{
-        protocol_state::MinaHash,
         scan_state::transaction_snark::{SokDigest, Statement},
         transaction_logic::zkapp_statement::ZkappStatement,
     },
@@ -40,7 +39,7 @@ use mina_hasher::Fp;
 use mina_p2p_messages::{
     bigint::BigInt,
     v2::{
-        CompositionTypesDigestConstantStableV1, MinaBlockHeaderStableV2,
+        CompositionTypesDigestConstantStableV1, MinaBaseProofStableV2,
         PicklesProofProofsVerified2ReprStableV2,
         PicklesProofProofsVerified2ReprStableV2MessagesForNextStepProof,
         PicklesProofProofsVerified2ReprStableV2MessagesForNextWrapProof,
@@ -594,16 +593,11 @@ pub struct VK<'a> {
 }
 
 pub fn verify_block(
-    header: &MinaBlockHeaderStableV2,
+    protocol_state_proof: &MinaBaseProofStableV2,
+    protocol_state_hash: mina_hasher::Fp,
     verifier_index: &VerifierIndex<Pallas>,
     srs: &SRS<Vesta>,
 ) -> bool {
-    let MinaBlockHeaderStableV2 {
-        protocol_state,
-        protocol_state_proof,
-        ..
-    } = &header;
-
     let vk = VK {
         commitments: PlonkVerificationKeyEvals::from(verifier_index),
         index: verifier_index,
@@ -611,7 +605,7 @@ pub fn verify_block(
     };
 
     let accum_check = accumulator_check::accumulator_check(srs, protocol_state_proof);
-    let verified = verify_impl(&MinaHash::hash(protocol_state), protocol_state_proof, &vk);
+    let verified = verify_impl(&protocol_state_hash, protocol_state_proof, &vk);
     accum_check && verified
 }
 
