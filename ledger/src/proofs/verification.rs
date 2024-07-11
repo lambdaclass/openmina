@@ -425,7 +425,7 @@ fn verify_with(
     )
 }
 
-fn run_checks(
+pub fn run_checks(
     proof: &PicklesProofProofsVerified2ReprStableV2,
     verifier_index: &VerifierIndex<Pallas>,
 ) -> bool {
