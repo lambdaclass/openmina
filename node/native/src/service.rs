@@ -2,6 +2,7 @@ use std::collections::{BTreeMap, VecDeque};
 
 use std::sync::{Arc, Mutex};
 
+use ledger::scan_state::protocol_state::MinaHash;
 use ledger::scan_state::scan_state::transaction_snark::{SokDigest, Statement};
 use libp2p_identity::Keypair;
 use mina_p2p_messages::v2::{LedgerProofProdStableV2, TransactionSnarkWorkTStableV2Proofs};
@@ -222,7 +223,8 @@ impl SnarkBlockVerifyService for NodeService {
             let result = {
                 let verifier_srs = verifier_srs.lock().expect("Failed to lock the SRS");
                 if !ledger::proofs::verification::verify_block(
-                    header,
+                    &header.protocol_state_proof,
+                    MinaHash::hash(&header.protocol_state),
                     &verifier_index,
                     &verifier_srs,
                 ) {
