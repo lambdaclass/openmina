@@ -15,8 +15,8 @@ derive_more = "0.99.17"
 rand = { version = "0.8", features = [ "small_rng" ] }
 bytes = "*"
 bs58 = "0.4.0"
-binprot = { git = "https://github.com/openmina/binprot-rs", rev = "2b5a909" }
-binprot_derive = { git = "https://github.com/openmina/binprot-rs", rev = "2b5a909" }
+binprot = { git = "https://github.com/lambdaclass/openmina-binprot-rs", rev = "2b5a909" }
+binprot_derive = { git = "https://github.com/lambdaclass/openmina-binprot-rs", rev = "2b5a909" }
 anyhow = "1.0.70"
 smallvec = "1.10.0"
 cfg-if = "1.0.0"
@@ -66,7 +66,7 @@ p2p-testing = { path = "testing" }
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 redux = { workspace = true, features=["serializable_callbacks"] }
 tokio = { version = "1.26", features = ["rt"] }
-webrtc = { git = "https://github.com/openmina/webrtc.git", branch = "openmina-13c490c3", optional = true }
+webrtc = { git = "https://github.com/lambdaclass/openmina-webrtc.git", branch = "mina_bridge", optional = true }
 hyper = { version = "0.14.25", features = ["client", "http1", "tcp"] }
 mio = { version = "0.8.11", features = ["os-poll"] }
 libc = { version = "0.2.151" }

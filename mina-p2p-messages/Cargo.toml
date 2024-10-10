@@ -10,8 +10,8 @@ license = "Apache-2.0"
 serde = { version = "1.0.142", features = ["derive"] }
 serde_json = { version = "1.0.83" }
 hex = "0.4.3"
-binprot = { git = "https://github.com/openmina/binprot-rs", rev = "2b5a909" }
-binprot_derive = { git = "https://github.com/openmina/binprot-rs", rev = "2b5a909" }
+binprot = { git = "https://github.com/lambdaclass/openmina-binprot-rs", rev = "2b5a909" }
+binprot_derive = { git = "https://github.com/lambdaclass/openmina-binprot-rs", rev = "2b5a909" }
 thiserror = "1.0.32"
 derive_more = "0.99.17"
 bs58 = { version = "0.4", features = ["check"] }
@@ -38,7 +38,7 @@ wasm-bindgen = "0.2"
 anyhow = "1.0.65"
 toml = "0.5.9"
 clap = { version = "4.0.18", features = ["derive"] }
-alloc-test = { git = "https://github.com/openmina/alloc-test.git" }
+alloc-test = { git = "https://github.com/lambdaclass/alloc-test.git" }
 time = { version = "0.3.17", features = ["formatting"] }
 
 

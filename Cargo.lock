@@ -177,7 +177,7 @@ dependencies = [
 [[package]]
 name = "alloc-test"
 version = "0.1.1"
-source = "git+https://github.com/openmina/alloc-test.git#0d3951eaddc58a6ea2d2134966ed5954234889d3"
+source = "git+https://github.com/lambdaclass/alloc-test.git#0d3951eaddc58a6ea2d2134966ed5954234889d3"
 dependencies = [
  "clap 4.5.2",
  "derive_builder",
@@ -684,7 +684,7 @@ dependencies = [
 [[package]]
 name = "binprot"
 version = "0.1.8"
-source = "git+https://github.com/openmina/binprot-rs?rev=2b5a909#2b5a9099a1c5640559d04e39899da301aebc8023"
+source = "git+https://github.com/lambdaclass/openmina-binprot-rs?rev=2b5a909#2b5a9099a1c5640559d04e39899da301aebc8023"
 dependencies = [
  "binprot_derive",
  "byteorder",
@@ -694,7 +694,7 @@ dependencies = [
 [[package]]
 name = "binprot_derive"
 version = "0.1.7"
-source = "git+https://github.com/openmina/binprot-rs?rev=2b5a909#2b5a9099a1c5640559d04e39899da301aebc8023"
+source = "git+https://github.com/lambdaclass/openmina-binprot-rs?rev=2b5a909#2b5a9099a1c5640559d04e39899da301aebc8023"
 dependencies = [
  "quote",
  "syn 1.0.109",
@@ -2898,7 +2898,7 @@ dependencies = [
 [[package]]
 name = "interceptor"
 version = "0.10.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "async-trait",
  "bytes",
@@ -5645,7 +5645,7 @@ dependencies = [
 [[package]]
 name = "redux"
 version = "0.1.0"
-source = "git+https://github.com/openmina/redux-rs.git?rev=2d1d8db#2d1d8dbd7239c0aec91db8f11126b90068dc848b"
+source = "git+https://github.com/lambdaclass/redux-rs?rev=2d1d8db#2d1d8dbd7239c0aec91db8f11126b90068dc848b"
 dependencies = [
  "enum_dispatch",
  "linkme",
@@ -5847,7 +5847,7 @@ checksum = "c3df9a9b6491d42c0fc527e92a87525c17e45c6b9c22345702a6dc0400320bf1"
 [[package]]
 name = "rtcp"
 version = "0.10.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "bytes",
  "thiserror",
@@ -5872,7 +5872,7 @@ dependencies = [
 [[package]]
 name = "rtp"
 version = "0.9.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "bytes",
  "rand 0.8.5",
@@ -6066,7 +6066,7 @@ dependencies = [
 [[package]]
 name = "sdp"
 version = "0.6.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "rand 0.8.5",
  "substring",
@@ -6808,7 +6808,7 @@ dependencies = [
 [[package]]
 name = "stun"
 version = "0.5.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "base64 0.21.7",
  "crc",
@@ -7316,7 +7316,7 @@ checksum = "23d5919d7121237af683b7fa982450597b1eaa2643e597aec3b519e4e5ab3d62"
 [[package]]
 name = "turn"
 version = "0.7.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "async-trait",
  "base64 0.21.7",
@@ -7790,7 +7790,7 @@ dependencies = [
 [[package]]
 name = "webrtc"
 version = "0.9.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "arc-swap",
  "async-trait",
@@ -7832,7 +7832,7 @@ dependencies = [
 [[package]]
 name = "webrtc-data"
 version = "0.8.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "bytes",
  "log",
@@ -7845,7 +7845,7 @@ dependencies = [
 [[package]]
 name = "webrtc-dtls"
 version = "0.8.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "aes 0.8.3",
  "aes-gcm 0.10.3",
@@ -7880,7 +7880,7 @@ dependencies = [
 [[package]]
 name = "webrtc-ice"
 version = "0.10.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "arc-swap",
  "async-trait",
@@ -7903,7 +7903,7 @@ dependencies = [
 [[package]]
 name = "webrtc-mdns"
 version = "0.6.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "log",
  "socket2 0.5.5",
@@ -7915,7 +7915,7 @@ dependencies = [
 [[package]]
 name = "webrtc-media"
 version = "0.7.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "byteorder",
  "bytes",
@@ -7927,7 +7927,7 @@ dependencies = [
 [[package]]
 name = "webrtc-sctp"
 version = "0.9.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "arc-swap",
  "async-trait",
@@ -7943,7 +7943,7 @@ dependencies = [
 [[package]]
 name = "webrtc-srtp"
 version = "0.11.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "aead 0.5.2",
  "aes 0.8.3",
@@ -7965,7 +7965,7 @@ dependencies = [
 [[package]]
 name = "webrtc-util"
 version = "0.8.0"
-source = "git+https://github.com/openmina/webrtc.git?branch=openmina-13c490c3#7f4858d64b51f1fd56e4419553c89cdf977942da"
+source = "git+https://github.com/lambdaclass/openmina-webrtc.git?branch=mina_bridge#7f4858d64b51f1fd56e4419553c89cdf977942da"
 dependencies = [
  "async-trait",
  "bitflags 1.3.2",
