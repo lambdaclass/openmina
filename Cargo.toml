@@ -35,16 +35,18 @@ resolver = "2"
 [workspace.dependencies]
 mina-p2p-messages = { path = "mina-p2p-messages", features = ["hashing"] }
 ledger = { path = "ledger", package = "mina-tree" }
-mina-hasher = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "mina_bridge" }
-mina-signer = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "mina_bridge" }
-mina-curves = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "mina_bridge" }
-o1-utils = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "mina_bridge" }
-kimchi = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "mina_bridge" }
-mina-poseidon = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "mina_bridge" }
-poly-commitment = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "mina_bridge" }
+mina-hasher = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "verifier_serializations" }
+mina-signer = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "verifier_serializations" }
+mina-curves = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "verifier_serializations" }
+o1-utils = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "verifier_serializations" }
+kimchi = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "verifier_serializations" }
+mina-poseidon = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "verifier_serializations" }
+poly-commitment = { git = "https://github.com/lambdaclass/openmina-proof-systems", branch = "verifier_serializations" }
 libp2p = { git = "https://github.com/lambdaclass/openmina-rust-libp2p", rev = "cd5425a759d959d7fde58a42f71ab059449760c5", default-features = false }
 vrf = { path = "vrf" }
-redux = { git = "https://github.com/lambdaclass/redux-rs", rev = "2d1d8db", features = ["serde"] }
+redux = { git = "https://github.com/lambdaclass/redux-rs", rev = "2d1d8db", features = [
+    "serde",
+] }
 serde = "1.0.190"
 serde_json = "1.0.107"
 serde_with = { version = "3.7.0", features = ["hex"] }
@@ -55,7 +57,7 @@ static_assertions = "1.1.0"
 inherits = "release"
 opt-level = 3
 debug = 2
-debug-assertions = true  # TODO: test and disable if too slow
+debug-assertions = true # TODO: test and disable if too slow
 overflow-checks = true
 lto = false
 panic = "abort"
@@ -78,4 +80,3 @@ ark-serialize = { git = "https://github.com/lambdaclass/openmina_algebra", branc
 opt-level = 3
 debug-assertions = true
 overflow-checks = false
-
