@@ -66,7 +66,7 @@ p2p-testing = { path = "testing" }
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 redux = { workspace = true, features=["serializable_callbacks"] }
 tokio = { version = "1.26", features = ["rt"] }
-webrtc = { git = "https://github.com/lambdaclass/openmina-webrtc.git", branch = "mina_bridge", optional = true }
+webrtc = { git = "https://github.com/lambdaclass/openmina-webrtc.git", rev = "7f4858d64b51f1fd56e4419553c89cdf977942da", optional = true }
 hyper = { version = "0.14.25", features = ["client", "http1", "tcp"] }
 mio = { version = "0.8.11", features = ["os-poll"] }
 libc = { version = "0.2.151" }
