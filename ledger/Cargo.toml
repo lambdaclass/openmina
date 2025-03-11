@@ -42,10 +42,10 @@ libc = "0.2"
 itertools = "0.10"
 tuple-map = "0.4.0"
 
-ark-ff = { git = "https://github.com/openmina/algebra", branch = "openmina", features = [ "parallel", "asm", "std" ] }
-ark-ec = { git = "https://github.com/openmina/algebra", branch = "openmina", features = [ "std" ] }
-ark-serialize = { git = "https://github.com/openmina/algebra", branch = "openmina", features = [ "std" ] }
-ark-poly = { git = "https://github.com/openmina/algebra", branch = "openmina", features = [ "std" ] }
+ark-ff = { git = "https://github.com/lambdaclass/openmina_algebra", rev = "017531e7aaa15a2c856532b0843876e371b01122" , features = [ "parallel", "asm", "std" ] }
+ark-ec = { git = "https://github.com/lambdaclass/openmina_algebra", rev = "017531e7aaa15a2c856532b0843876e371b01122", features = [ "std" ] }
+ark-poly = { git = "https://github.com/lambdaclass/openmina_algebra", rev = "017531e7aaa15a2c856532b0843876e371b01122", features = [ "std" ] }
+ark-serialize = { git = "https://github.com/lambdaclass/openmina_algebra", rev = "017531e7aaa15a2c856532b0843876e371b01122", features = [ "std" ] }
 
 rayon = "1"
 
