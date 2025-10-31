@@ -1,5 +1,6 @@
 use binprot::Nat0;
 use serde::{de::Visitor, Deserialize, Serialize};
+use std::fmt;
 
 const MINA_STRING_MAX_LENGTH: usize = 100_000_000;
 const CHUNK_SIZE: usize = 5_000;
@@ -88,10 +89,7 @@ impl<'de> Deserialize<'de> for ByteString {
         impl<'de> Visitor<'de> for V {
             type Value = Vec<u8>;
 
-            fn expecting(
-                &self,
-                formatter: &mut serde::__private::fmt::Formatter,
-            ) -> serde::__private::fmt::Result {
+            fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
                 formatter.write_str("hex string")
             }
 
@@ -220,10 +218,7 @@ impl<'de> Deserialize<'de> for CharString {
         impl<'de> Visitor<'de> for V {
             type Value = Vec<u8>;
 
-            fn expecting(
-                &self,
-                formatter: &mut serde::__private::fmt::Formatter,
-            ) -> serde::__private::fmt::Result {
+            fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
                 formatter.write_str("string")
             }
 
